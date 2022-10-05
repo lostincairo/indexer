@@ -38,14 +38,14 @@ async def run_indexer(server_url=None, mongo_url=None, restart=None):
     #
     # For now, this also helps the SDK map between human-readable
     # event names and StarkNet events.
-    runner.create_if_not_exists(
+    runner.add_event_filters(
         filters=[
             EventFilter.from_event_name(
-                name="Transfer",
-                address="0x0266b1276d23ffb53d99da3f01be7e29fa024dd33cd7f7b1eb7a46c67891c9d0",
+                name="AskToQueueOccured",
+                address="0x058bc407db41c7503a15aa72d461741166c6cfa2a6d8c345a210e2dc6246f9a4",
             )
         ],
-        index_from_block=201_000,
+        index_from_block=351_000,
     )
 
     print("Initialization completed. Entering main loop.")
