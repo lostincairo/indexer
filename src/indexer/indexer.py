@@ -1,7 +1,7 @@
 from apibara import EventFilter, IndexerRunner, Info, NewEvents
 from apibara.indexer import IndexerRunnerConfiguration
 
-indexer_id = "my-indexer"
+indexer_id = "my-indexer-2"
 
 
 async def handle_events(info: Info, block_events: NewEvents):
@@ -45,7 +45,7 @@ async def run_indexer(server_url=None, mongo_url=None, restart=None):
                 address="0x058bc407db41c7503a15aa72d461741166c6cfa2a6d8c345a210e2dc6246f9a4",
             )
         ],
-        index_from_block=351_000,
+        index_from_block=301_000,
     )
 
     print("Initialization completed. Entering main loop.")
