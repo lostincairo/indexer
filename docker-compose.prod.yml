@@ -5,8 +5,8 @@ services:
     image: mongo:latest
     restart: always
     environment:
-      MONGO_INITDB_ROOT_USERNAME: apibara
-      MONGO_INITDB_ROOT_PASSWORD: apibara
+      MONGO_INITDB_ROOT_USERNAME: lostincairo
+      MONGO_INITDB_ROOT_PASSWORD: cairoexplorer
     ports:
     - 27017:27017
     volumes:
@@ -20,7 +20,7 @@ services:
     command:
     - start
     - --mongo-url
-    - "mongodb://apibara:apibara@mongo:27017"
+    - "mongodb+srv://lostincairo:cairoexplorer@cluster0.8m5ok7q.mongodb.net/?retryWrites=true&w=majority"
     environment:
       PYTHONUNBUFFERED: "1"
     links:

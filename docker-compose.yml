@@ -5,8 +5,8 @@ services:
     image: mongo:latest
     restart: always
     environment:
-      MONGO_INITDB_ROOT_USERNAME: apibara
-      MONGO_INITDB_ROOT_PASSWORD: apibara
+      MONGO_INITDB_ROOT_USERNAME: lostincairo
+      MONGO_INITDB_ROOT_PASSWORD: cairoexplorer
     ports:
     - 27017:27017
     volumes:
