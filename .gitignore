@@ -1,2 +1,6 @@
 __pycache__
 _docker
+
+main.py
+docker-compose.yml
+docker-compose.prod.yml
